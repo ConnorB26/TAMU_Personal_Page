@@ -1,4 +1,49 @@
 <!DOCTYPE html>
 <html>
-    
+    <head>
+        <title>Connor Bowling's Website</title>
+        <link rel="stylesheet" href="style1.css"></link>
+        <script>
+            function show(elementID) {
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
+                var pages = document.getElementsByClassName('page');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+                ele.style.display = 'block';
+            }
+            </script>
+    </head>
+    <body>
+        <div class="header">
+            <li class="name">Connor Bowling</li>
+            <div class="menu">
+                <li><a href="#" onclick="show('homePage')" id="homeLink">Home</a></li>
+                <li><a href="#portfolio" onclick="show('portfolioPage')" id="portfolioLink">Portfolio</a></li>
+                <li><a href="#qualifications" onclick="show('qualificationsPage')" id="qualificationsLink">Qualifications</a></li>
+                <li><a href="#service" onclick="show('servicePage')" id="serviceLink">Service</a></li>
+            </div>
+        </div>
+        
+        <div id="homePage" class="page">
+            <h1>Home</h1>
+        </div>
+
+        <div id="portfolioPage" class="page" style="display:none">
+            <h1>Portfolio</h1>
+        </div>
+
+        <div id="qualificationsPage" class="page" style="display:none">
+            <h1>Qualifications</h1>
+        </div>
+
+        <div id="servicePage" class="page" style="display:none">
+            <h1>Service</h1>
+        </div>
+
+    </body>
 </html>

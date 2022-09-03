@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: blue;
+}
+
+.header li {
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.name {
+    color: #fff;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+}
+
+.menu a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 26px;
+    text-transform: capitalize;
+
+    position: relative;
+    text-decoration: none;
+}
