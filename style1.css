@@ -1,5 +1,5 @@
 /* Navigation Bar */
-.navbar {
+#navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,11 +7,11 @@
     background-color: teal;
 }
 
-.navbar li {
+#navbar li {
     list-style: none;
 }
 
-.name {
+#navbar_name {
     color: #fff;
     font-weight: 500;
     font-size: 35px;
@@ -19,12 +19,12 @@
     text-transform: capitalize;
 }
 
-.menu {
+#navbar_menu {
     display: flex;
     gap: 1em;
 }
 
-.menu a {
+#navbar_menu a {
     color: #fff;
     font-weight: 500;
     font-size: 26px;
@@ -35,8 +35,8 @@
     text-decoration: none;
 }
 
-.menu a:after,
-.menu a:before {
+#navbar_menu a:after,
+#navbar_menu a:before {
   content: "";
   position: absolute;
   width: 0%;
@@ -46,22 +46,35 @@
   transition: all 300ms ease-in;
 }
 
-.menu a:after {
+#navbar_menu a:after {
   left: 0;
 }
 
-.menu a:before {
+#navbar_menu a:before {
   right: 0;
   top: -5%;
 }
 
-.menu a:hover::after {
+#navbar_menu a:hover::after {
   width: 100%;
   height: 2px;
   background-color: #fff;
 }
 
-.menu a:hover::before {
+#navbar_menu a:hover::before {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  top: -5%;
+}
+
+#navbar ul li a.navbar_active::after {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+#navbar ul li a.navbar_active::before {
   width: 100%;
   height: 2px;
   background-color: #fff;
