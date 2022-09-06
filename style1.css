@@ -1,4 +1,4 @@
-/* Entire Site */
+/* Entire Site (Palette = https://coolors.co/dad7cd-a3b18a-588157-3a5a40-344e41) */
 body {
   background-color: #3A5A40;
   color: #DAD7CD;
@@ -6,8 +6,20 @@ body {
   margin: 0px;
 }
 
+body a {
+  color: #A3B18A;
+}
+
+body a:hover {
+  color: #588157;
+}
+
 #page {
   margin: 16px;
+}
+
+#page_title {
+  text-align: center;
 }
 
 /* Navigation Bar */
@@ -104,17 +116,42 @@ body {
   padding-right: 16px;
 }
 
+#text_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab_over1 {
+  margin-left: 25px;
+  margin-bottom: -6px;
+}
+
+.tab_over2 {
+  margin-left: 50px;
+  margin-bottom: -6px;
+}
+
 /* Portfolio */
 .portfolio_item {
-  display: block;
-  height: 256px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.portfolio_text {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.portfolio_text h2 {
+  margin-bottom: -6px;
 }
 
 .portfolio_image {
   max-width: 22.5%;
   min-width: 256px;
   float: left;
-  padding-right: 16px;
   border-radius: 16px;
 }
 
