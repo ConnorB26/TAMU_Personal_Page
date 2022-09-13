@@ -3,12 +3,25 @@
     <script src="functions.js"></script>
     <head>
         <title>Connor Bowling's Home Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style1.css" id="page_style"></link>
         <link rel="icon" type="image/png" href="images/favicons/home_maroon.png">
     </head>
     <body>
         <div id="navbar">
             <li id="navbar_name">Connor Bowling</li>
+
+            <div id="style_switch">
+                <label class="switch">
+                    <input type="checkbox" onclick="toggle_style()">
+                    <span class="slider round"></span>
+                </label>
+                <h4 id="style_label">Style</h4>
+            </div>
+
             <ul id="navbar_menu">
                 <li><a href="index.html" class="navbar_active">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -16,14 +29,12 @@
                 <li><a href="service.html">Service</a></li>
             </ul>
         </div>
-
-        <button type='button' onclick='toggle_style()'>Toggle Style</button>
         
-        <div id="page">
+        <div id="home_page">
             <img src="images/self_picture.jpg" id="headshot"/>
-            <h1>About Me</h1>
-    
+            
             <div id="text_content">
+                <h1>About Me</h1>
                 <h2 class="tab_over1">Introduction</h2>
                 <p class="tab_over2">
                     Howdy! My name is Connor Bowling and I'm a Junior Computer Science major with a minor in Psychology,
