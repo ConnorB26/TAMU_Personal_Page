@@ -47,18 +47,56 @@ body a:hover {
 /* Style Toggle */
 #style_toggle {
     background: linear-gradient(to right, #1D1D1D 0%, #575757 100%);
-    font-family: 'Lora', serif;
     width: 180px;
     height: 60px;
     cursor: pointer;
-    border: 1px solid #fff;
-    border-radius: 5px;
 }
 
 #style_toggle span {
-    color: white;
+    font-family: 'Lora', serif;
+    color: #fff;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 400;
+}
+
+.style_toggle_border {
+    box-shadow: inset 0 0 0 2px #A3B18A;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+.style_toggle_border::before, .style_toggle_border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+.style_toggle_border::before {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+.style_toggle_border::after {
+    border-top-width: 2px;
+    border-right-width: 2px;
+}
+.style_toggle_border:hover {
+    color: #fff;
+}
+.style_toggle_border:hover::before, .style_toggle_border:hover::after {
+    border-color: #fff;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+.style_toggle_border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+.style_toggle_border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
 }
 
 /* Navigation Bar */
