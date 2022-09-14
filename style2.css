@@ -154,7 +154,7 @@ body h2 {
     z-index: 3;
 }
 
-#page a:not(.fa) {
+#page a:not(.fa):not(#resume_section a) {
     color: #08FDD8;
     text-decoration: none;
     background: linear-gradient(to right, #08FDD8, #08FDD8),
@@ -165,7 +165,7 @@ body h2 {
     transition: background-size 400ms;
 }
 
-#page a:hover:not(.fa) {
+#page a:hover:not(.fa):not(#resume_section a) {
     background-size: 0 2px, 100% 2px;
 }
 
@@ -412,11 +412,27 @@ body h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 16px;
 }
 
 #resume {
     width: 600px;
     height: 820px;
+}
+
+#resume_section a {
+    color: #08FDD8;
+    text-decoration: none;
+    background: linear-gradient(to right, #08FDD8, #08FDD8),
+                linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 75%, 0 75%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+#resume_section a:hover {
+    background-size: 0 2px, 100% 2px;
 }
 
 /* Service */
