@@ -3,20 +3,29 @@
     <script src="functions.js"></script>
     <head>
         <title>Connor Bowling's Service</title>
-        <link rel="stylesheet" href="style1.css" id="page_style"></link>
+        <link rel="stylesheet" href="style2.css" id="page_style"></link>
         <link rel="icon" type="image/png" href="images/favicons/service_maroon.png">
     </head>
     <body>
+        <div class="area" >
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
         <div id="navbar">
             <li id="navbar_name">Connor Bowling</li>
 
-            <div id="style_switch">
-                <label class="switch">
-                    <input type="checkbox" onclick="toggle_style()">
-                    <span class="slider round"></span>
-                </label>
-                <h4 id="style_label">Style</h4>
-            </div>
+            <button type="button" onclick="toggle_style()" id="style_toggle"><span>Toggle Style</span></button>
 
             <ul id="navbar_menu">
                 <li><a href="index.html">Home</a></li>

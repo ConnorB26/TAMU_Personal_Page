@@ -3,24 +3,29 @@
     <script src="functions.js"></script>
     <head>
         <title>Connor Bowling's Home Page</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style1.css" id="page_style"></link>
+        <link rel="stylesheet" href="style2.css" id="page_style"></link>
         <link rel="icon" type="image/png" href="images/favicons/home_maroon.png">
     </head>
     <body>
+        <div class="area" >
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
         <div id="navbar">
             <li id="navbar_name">Connor Bowling</li>
 
-            <div id="style_switch">
-                <label class="switch">
-                    <input type="checkbox" onclick="toggle_style()">
-                    <span class="slider round"></span>
-                </label>
-                <h4 id="style_label">Style</h4>
-            </div>
+            <button type="button" onclick="toggle_style()" id="style_toggle"><span>Toggle Style</span></button>
 
             <ul id="navbar_menu">
                 <li><a href="index.html" class="navbar_active">Home</a></li>
@@ -30,37 +35,40 @@
             </ul>
         </div>
         
-        <div id="home_page">
-            <div id="headshot_linkedin">
-                <img src="images/self_picture.jpg" id="headshot"/>
-                <a href="https://www.linkedin.com/in/connor-bowling/" target="_blank" class="fa fa-lg fa-linkedin"></a>
-            </div>
+        <div id="page">
+            <h1 id="page_title">About Me</h1>
+
+            <div id="home_page">
+                <div id="headshot_linkedin">
+                    <img src="images/self_picture.jpg" id="headshot"/>
+                    <a href="https://www.linkedin.com/in/connor-bowling/" target="_blank" class="fa fa-lg fa-linkedin"></a>
+                </div>
+                
+                <div id="text_content">
+                    <h2 class="tab_over1">Introduction</h2>
+                    <p class="tab_over2">
+                        Howdy! My name is Connor Bowling and I'm a Junior Computer Science major with a minor in Psychology,
+                        excited to learn more about differentways I can apply my knowledge and skills.
+                    </p>
             
-            <div id="text_content">
-                <h1>About Me</h1>
-                <h2 class="tab_over1">Introduction</h2>
-                <p class="tab_over2">
-                    Howdy! My name is Connor Bowling and I'm a Junior Computer Science major with a minor in Psychology,
-                    excited to learn more about differentways I can apply my knowledge and skills.
-                </p>
+                    <h2 class="tab_over1">Personal Background</h2>
+                    <p class="tab_over2">
+                        I was born and raised in Carrollton, Texas (suburb north of Dallas), alongside my twin sister, Meredith.
+                        I grew up playing ice hockey, which I still continue to play as a hobby, 12 years after I first started.
+                        In addition to playing hockey, I have interests in watching hockey, making/playing video games, baking,
+                        and building computers.
+                    </p>
         
-                <h2 class="tab_over1">Personal Background</h2>
-                <p class="tab_over2">
-                    I was born and raised in Carrollton, Texas (suburb north of Dallas), alongside my twin sister, Meredith.
-                    I grew up playing ice hockey, which I still continue to play as a hobby, 12 years after I first started.
-                    In addition to playing hockey, I have interests in watching hockey, making/playing video games, baking,
-                    and building computers.
-                </p>
-    
-                <h2 class="tab_over1">Academic Background</h2>
-                <p class="tab_over2">
-                    I am currently pursuing a BS in Computer Science, with a minor in Psychology. Over the previous few years,
-                    I have worked on many different personal projects, gaining experience in the fields of game design, android
-                    development, web development, and software development. As a result, I've learned a lot of different languages,
-                    such as Kotlin, Java, C++, C\#, Visual Basic, and JavaScript, and different technologies and tools, such as
-                    Git, Unity, Visual Studio, Photoshop, and more. After I graduate, I plan to get a job as a software developer
-                    or as a game programmer, with a slight possibly of later pursuing a master's degree.
-                </p>
+                    <h2 class="tab_over1">Academic Background</h2>
+                    <p class="tab_over2">
+                        I am currently pursuing a BS in Computer Science, with a minor in Psychology. Over the previous few years,
+                        I have worked on many different personal projects, gaining experience in the fields of game design, android
+                        development, web development, and software development. As a result, I've learned a lot of different languages,
+                        such as Kotlin, Java, C++, C\#, Visual Basic, and JavaScript, and different technologies and tools, such as
+                        Git, Unity, Visual Studio, Photoshop, and more. After I graduate, I plan to get a job as a software developer
+                        or as a game programmer, with a slight possibly of later pursuing a master's degree.
+                    </p>
+                </div>
             </div>
         </div>
     </body>

@@ -7,7 +7,7 @@ function toggle_style()
 
 function get_style()
 {
-    return localStorage['style'] || "style1.css";
+    return localStorage['style'] || "style2.css";
 }
 
 function set_style()
@@ -16,6 +16,6 @@ function set_style()
     document.getElementById('page_style').setAttribute("href", style);
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', () => {
     set_style();
 });
