@@ -1,4 +1,4 @@
-# [TAMU Personal Page](https://github.com/ConnorB26/TAMU_Personal_Page) - Connor Bowling's Initial Dive into Web Development
+# [TAMU Personal Page](https://people.tamu.edu/~connorb26/) - Connor Bowling's Initial Dive into Web Development
 
 Welcome to the repository for my Texas A&M University Personal Page. This website was crafted as part of the CSCE 315 project, and it represents my initial foray into web development. Built exclusively with the foundational trinity of web technologies—HTML, CSS, and JavaScript—this site stands as a testament to my early explorations in the realm of web design and development.
 
